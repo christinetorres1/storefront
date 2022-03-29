@@ -1,11 +1,12 @@
 .pageTitle {
+  text-align: center;
   margin: 4rem 0 0;
   color: #334155;
 
   h1 {
     font-size: clamp(4rem, 18vw, 10rem);
     font-weight: 800;
-   
+    line-height: 1;
   }
 
   p {
