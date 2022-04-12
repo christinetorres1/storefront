@@ -1,11 +1,18 @@
 import ProductCard from '../components/ProductCard/ProductCard'
 import PageTitle from "../components/PageTitle/PageTitle";
 
+import { loadStripe } from '@stripe/stripe-js';
+
 
 // view all panel....
 export default function Home(props) {
 
   const products = props.products;
+
+  // console.log(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
+  // console.log(process.env.STRIPE_SECRET_KEY)
+
+  const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
 
   return(
     <>
@@ -16,32 +23,6 @@ export default function Home(props) {
     </>
   )
 
-  /************************************************************************** */
-
-  // const [users, setUsers] = useState(null)
-  //  useEffect(()=>{
-  //    // connecting to firebase API
-  //    // ref(db, '/prod')
-  //    // await get(ref)
-  //    async function getUserData(){
-  //       const res = await fetch('https://jsonplaceholder.typicode.com/users') 
-  //       const userData = await res.json();
-  //       console.log(userData)
-  //        setUsers(userData)
-  //    }
-
-  //    getUserData()
-
-  //  }, [])
-  
-  //    if(users){
-  //      return (
-  //          users.map(user => <Product key={user.id} user={user}/>)
-  //      )
-  //    }
-
-
-  //    return null
 }
  
 
