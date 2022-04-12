@@ -1,3 +1,5 @@
+import Head from 'next/head';
+
 import ProductCard from '../components/ProductCard/ProductCard'
 import PageTitle from "../components/PageTitle/PageTitle";
 
@@ -16,7 +18,13 @@ export default function Home(props) {
 
   return(
     <>
-      <PageTitle tagline="product specials" title="ChocolateStore"/>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="You're favourite local chocolate store selling the best chocolates in Edmonton"/>
+        <meta name="keywords" content="chocolate, Edmonton, best chocolate, macaron, truffles"/>
+        <title>ChocolateStore</title>
+      </Head>
+      <PageTitle tagline="Our limited edition chocolates." title="ChocolateStore"/>
       <main>
         { products.map(product => <ProductCard key={product.uid} product={product}/>)}
       </main>

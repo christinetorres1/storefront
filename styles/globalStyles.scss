@@ -23,13 +23,25 @@ section {
   display: block;
 }
 
-// main {
-//   // display: flex;
-//   // flex-wrap: wrap;
-//   // justify-content: center;
-//   // align-items: center;
-//   // margin: 2rem;
-// }
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #FAEEE0;
+  margin: 1rem 3rem;
+  border-radius: 5rem;
+  height: 100%;
+}
+
+html {
+  background-color: #cba781;
+}
+
+div {
+  background-color: #cba781;
+}
+
 
 
 [tabindex="-1"]:focus {

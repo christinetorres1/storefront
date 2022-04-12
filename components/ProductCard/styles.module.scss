@@ -1,6 +1,6 @@
 .productCard {
   max-width: 420px;
-  margin: 1rem auto 0;
+  margin: 2rem auto;
   text-align: center;
 
   footer {
@@ -8,25 +8,27 @@
   }
 
   button {
-    border: 1px solid #3b82f6;
-    background-color: #3b82f6;
-    color: #eff6ff;
+    border: 1px solid #694E4E;
+    background-color: #694E4E;
+    color: #FAEEE0;
     padding: 0.5rem 2rem;
     border-radius: 3px;
     font-size: 1.25rem;
   }
 
   button:hover {
-    border: 1px solid #3b82f6;
-    background-color: #eff6ff;
-    color:  #3b82f6;
+    border: 1px solid #694E4E;
+    background-color: #FAEEE0;
+    color:  #694E4E;
     padding: 0.5rem 2rem;
     border-radius: 3px;
     font-size: 1.25rem;
+    cursor: pointer;
   }
 
   img {
     width: 100%;
+    border-radius: 5px;
   }
 
 }
@@ -34,17 +36,18 @@
 .price {
   font-size: 1.74rem;
   font-weight: 200;
-  color: #64748b;
+  color: #694E4E;
   margin: 0.25rem 0;
 }
 
 .description {
   font-size: 14px;
-  color: #94a3b8;
+  color: #694E4E;
+
 }
 
 .name {
   font-size: 2.75rem;
   font-weight: 800;
-  color: #1e293b;
+  color: #694E4E;
 }
